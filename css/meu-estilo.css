@@ -1,0 +1,21 @@
+  body {
+    background-color: #2b3035;
+  }
+  
+  .imagem-card{
+    height: 240px;
+  }
+
+  .icon-footer{
+    height: 80px;
+  }
+
+  #icon-footer-e{
+    transform: scaleX(-1);
+  }
+
+  .imagem-aluno {
+    height: 320px;
+  }
+  
+  

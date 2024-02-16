@@ -11,7 +11,8 @@
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album/">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
     <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
-    
+    <link rel="stylesheet" href="/css/meu-estilo.css">
+
   </head>
 <body>
 
@@ -75,15 +76,15 @@
         <a href="#" class="navbar-brand d-flex align-items-center">
           <img src="/img/logo.png" alt="dev" width="64" height="64" class="rounded-circle">
         </a>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-            <li class="nav-item">
+        <div class="w-50 justify-content-center" id="navbarSupportedContent">
+          <ul class="navbar-nav nav-fill">
+            <li class="nav-item fs-5">
               <a class="nav-link" href="#">Quem Somos</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item fs-5">
               <a class="nav-link" href="#">Cursos</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item fs-5">
               <a class="nav-link" href="#">Alunos</a>
             </li>
           </ul>
@@ -96,78 +97,95 @@
   <main>
 
     <!-- Título Iniciativa Dev -->
-    <section class="py-5 text-center container">
-      <div class="row py-lg-5">
+    <section class="py-5 my-5 text-center container">
+      <div class="row py-5">
         <div class="col mx-auto">
-          <h1 class="fw-bold display-2" >A Iniciativa de Desenvolver</h1>
-          <p class="lead text-body-secondary col-8 mx-auto">DEV é uma iniciativa independente que propõe uma troca de aprendizado entre tutores e voluntários e pessoas com interesse na área de tecnologia e desenvolvimento</p>
+          <h1 class="fw-normal display-3">A Iniciativa de Desenvolver</h1>
+          <p class="lead text-body-secondary col-8 mx-auto my-4">DEV é uma iniciativa independente que propõe uma troca de aprendizado entre tutores e voluntários e pessoas com interesse na área de tecnologia e desenvolvimento</p>
           <p>
-            <a href="#" class="btn btn-primary my-2 btn-lg">Junte-se a Nós</a>
+            <a href="#" class="btn btn-primary my-3 btn-lg">Junte-se a Nós</a>
           </p>
         </div>
       </div>
     </section>
 
-    <!-- Tudo do Nossos Cursos -->
-    <div class="album py-5 bg-body-tertiary">
-      <div class="container">
-
-        <h1 id="cursos" class="fw-bold display-5 text-center" >Nossos Cursos</h1>
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+    <!-- Nossos Cursos -->
+    <section class="album py-5 my-5 bg-body-tertiary">
+      <div class="container py-5">
+        <!-- Título dos Cursos -->
+        <h1 class="fw-normal display-5 text-center pt-4 pb-5" >Nossos Cursos</h1>
+        <!-- Cards dos Cursos -->
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+          <!-- Card de Desenvolvimento de Site -->
           <div class="col">
-            <div class="card shadow-sm">
-              <img class="site" src="/img/Desenv. d Site.png">
+            <div class="card">
+              <img class="imagem-card card-img-top" src="/img/Desenv. d Site.png">
               <div class="card-body">
-                <h3 id="titulosite" class="card-text">Desenvolvimento de Site</h3>
-                <p>Todas as quintas 21:30</p>
+                <h3 class="card-title text-truncate">Desenvolvimento de Site</h3>
+                <p class="card-text">Todas as quintas 21:30</p>
               </div>
             </div>
           </div>
+          <!-- Card de Design Gráfico -->
           <div class="col">
-            <div class="card shadow-sm">
-              <img class="design" src="/img/design.jfif">
-              <div class="card-body">
-                <h3 id="titulodesign" class="card-text">Design Gráfico</h3>
-                <p>Em Breve</p>
+            <div class="card">
+              <img class="imagem-card card-img-top" src="/img/design.jfif">
+              <div class="card-body ">
+                <h3 class="card-title text-truncate">Design Gráfico</h3>
+                <p class="card-text">Em Breve</p>
               </div>
             </div>
           </div>
+          <!-- Card de Excel -->
           <div class="col">
-            <div class="card shadow-sm">
-              <img class="excel" src="/img/Excel.jfif">
+            <div class="card">
+              <img class="imagem-card card-img-top" src="/img/Excel.jfif">
               <div class="card-body">
-                <h3 id="tituloexcel" class="card-text">Excel</h3>
-                <p>Em Breve</p>
+                <h3 class="card-title text-truncate">Excel</h3>
+                <p class="card-text">Em Breve</p>
               </div>
             </div>
           </div>
         </div> 
-    </div>
+      </div>
+    </section>
 
-    <!-- Perfil dos ALunos -->
-    <h1 id="alunos" class="fw-bold display-5 text-center">Nossos Alunos</h1>
-      <div class="perfils">
-        <img id="imgB" src="/img/Borracha.png" class="rounded-circle alt="...">
-        <img id="imgN" src="/img/Nathan.jpg" class="rounded-circle alt="...">
-        <img id="imgK" src="/img/Kayky.jfif" class="rounded-circle alt="...">
+    <!-- Perfil dos Alunos -->
+    <section class="py-5 my-5 container">
+      <!-- Título dos Alunos -->
+      <h1 class="fw-normal display-5 text-center pt-4 pb-5">Nossos Alunos</h1>
+      <!-- Cards dos Alunos -->
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <!-- Card do Aluno 1 -->
+        <div class="">
+          <img src="/img/Borracha.png" class="imagem-aluno rounded-circle" alt="...">
+          <p class="fs-5">O conteúdo do curso é muito útil e relevante para minha carreira.</p>
+        </div>
+        <!-- Card do Aluno 2 -->
+        <div class="">
+          <img src="/img/Nathan.jpg" class="imagem-aluno rounded-circle" alt="...">
+          <p>O instrutor é muito experiente e fornece informações valiosas</p>
+        </div>
+        <!-- Card do Aluno 3 -->
+        <div class="">
+          <img src="/img/Kayky.jfif" class="imagem-aluno rounded-circle" alt="...">
+          <p>A plataforma é fácil de usar e me ajuda a aprender de forma eficaz.</p>
+        </div>
       </div>
-      <div id="feedback" class="text-center fs-5">
-        <p>O conteúdo do curso é muito útil e relevante para minha carreira.</p>
-        <p>O instrutor é muito experiente e fornece informações valiosas</p>
-        <p>A plataforma é fácil de usar e me ajuda a aprender de forma eficaz.</p>
-      </div>
+    </div>
   </main>
 
   <!-- Rodapé -->
-  <footer class="text-body-secondary">
-    <div id="cabecadev">
-      <img id="dev1" class="rounded float-start" src="/img/1_Cabeça_DEV.png">
-      <img id="dev2" class="rounded float-end" src="/img/1_Cabeça_DEV.png">
+  <footer class="container bg-body-tertiary">
+    <div>
+      <img id="icon-footer-e" class="icon-footer rounded float-start" src="/img/1_Cabeça_DEV.png">
+      <img id="icon-footer-d" class="icon-footer rounded float-end" src="/img/1_Cabeça_DEV.png">
     </div>
     <div class="container text-center">
       <h5 class="mb-1 text-center">Desenvolvido Por Alunos Da Iniciativa Dev</h5>
     </div>
   </footer>
+  
   <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
